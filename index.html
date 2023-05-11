@@ -168,7 +168,7 @@
 
         <header class="mdl-layout__header">
             <div class="mdl-layout-icon">
-                <img class="logo" src="assets/icon.png">
+                <img class="logo" src="assets/klas-gov-logo-dark.webp">
             </div>
             <div class="mdl-layout__header-row">
 
@@ -178,20 +178,13 @@
 
         <div id="video-conatiner">
             <canvas id="my_canvas" width="800" height="500"></canvas>
-            <video id="video" controls autoplay></video>
+            <video id="video" controls autoplay loop></video>
         </div>
 
 
 
         <div id="upload-data">
             <h5>Try with your data</h5>
-            <p>You can analyse a video by following the instructions <a target="_blank"
-                    href="https://cloud.google.com/video-intelligence-storage-trigger">here</a>.
-                Also see the script <a target="_blank"
-                    href="https://github.com/ZackAkil/video-intelligence-api-visualiser/blob/main/run_video_intelligence.py">here</a>
-                if you want to run all features at once.
-            </p>
-
             <p>This app <b><u>doesn't</u></b> send or store any of your video or annotation data. It just visualises
                 local data files.</p>
             <div class="upload-area" ondrop="drop_video(event)" ondragover="drag_enter(event)">
@@ -475,8 +468,8 @@ Find links to script examples at the top right of the screen.")
         video_input.addEventListener('change', load_video_dragged, false)
         json_input.addEventListener('change', load_json_dragged, false)
 
-        load_json_from_url("assets/test_json.json")
-        load_video_from_url("assets/test_video.mp4")
+        load_json_from_url("assets/sof.json")
+        load_video_from_url("assets/sof.mp4")
 
 
         // check for hash code in url 
